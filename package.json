@@ -2,11 +2,18 @@
   "name": "@gdl/cli",
   "description": "CLI helper para projetos da GDL",
   "version": "0.1.0",
-  "main": "index.js",
-  "scripts": {
- 
+  "main": "bin/index.js",
+  "bin": {
+    "gdl-cli": "./bin/index.js"
   },
-  "keywords": [],
+  "scripts": {
+    "gdl": "node bin/index.js"
+  },
   "author": "Felipe Rosas <contato@eufelipe.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "prompts": "^2.4.2",
+    "shelljs": "^0.8.5"
+  }
 }
