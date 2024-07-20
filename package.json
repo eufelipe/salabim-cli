@@ -1,0 +1,12 @@
+{
+  "name": "@gdl/cli",
+  "description": "CLI helper para projetos da GDL",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+ 
+  },
+  "keywords": [],
+  "author": "Felipe Rosas <contato@eufelipe.com>",
+  "license": "ISC"
+}
