@@ -8,7 +8,7 @@ Para instalar o Salabim CLI, primeiro você precisa instalá-lo globalmente usan
 
 ```
 
-npm install -g @eufelipe/salabim-cli
+npm install -g @salabim/salabim-cli
 
 ```
 
