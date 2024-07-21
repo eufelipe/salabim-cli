@@ -1,5 +1,5 @@
 {
-  "name": "@gdl/cli",
+  "name": "@eufelipe/cli",
   "description": "CLI helper para projetos da GDL",
   "version": "0.1.0",
   "main": "bin/index.js",
