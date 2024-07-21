@@ -1,13 +1,10 @@
 {
-  "name": "@eufelipe/cli",
-  "description": "CLI helper para projetos da GDL",
+  "name": "@salabim/salabim-cli",
+  "description": "CLI helper para projetos pessoais",
   "version": "0.1.1",
   "main": "bin/index.js",
   "bin": {
-    "gdl-cli": "./bin/index.js"
-  },
-  "scripts": {
-    "gdl": "node bin/index.js"
+    "salabim": "./bin/index.js"
   },
   "author": "Felipe Rosas <contato@eufelipe.com>",
   "license": "ISC",
