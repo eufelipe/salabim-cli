@@ -2,14 +2,22 @@
 
 const { program } = require('commander');
 const { setupKeystore } = require('../lib/setupKeystore');
-const { setupFastlane } = require('../lib/setupFastlane');
 const { setupLinting } = require('../lib/setupLinting');
+const { setupFastlane } = require('../lib/setupFastlane');
+const { setupCspell } = require('../lib/setupCspell');
 
 program
   .command('setup-keystore')
   .description('Setup keystore for Android project')
   .action(() => {
     setupKeystore();
+  });
+
+program
+  .command('setup-linting')
+  .description('Setup ESLint and Prettier')
+  .action(() => {
+    setupLinting();
   });
 
 program
@@ -20,10 +28,10 @@ program
   });
 
 program
-  .command('setup-linting')
-  .description('Setup ESLint and Prettier for the project')
+  .command('setup-cspell')
+  .description('Setup Cspell for the project')
   .action(() => {
-    setupLinting();
+    setupCspell();
   });
 
 program.parse(process.argv);
