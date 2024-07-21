@@ -5,6 +5,7 @@ const { setupKeystore } = require('../lib/setupKeystore');
 const { setupLinting } = require('../lib/setupLinting');
 const { setupFastlane } = require('../lib/setupFastlane');
 const { setupCspell } = require('../lib/setupCspell');
+const { setupCodeQuality } = require('../lib/setupCodeQuality');
 
 program
   .command('setup-keystore')
@@ -33,5 +34,13 @@ program
   .action(() => {
     setupCspell();
   });
+
+  program
+  .command('setup-code-quality')
+  .description('Setup lint-staged, commitlint, and husky')
+  .action(() => {
+    setupCodeQuality();
+  });
+
 
 program.parse(process.argv);
