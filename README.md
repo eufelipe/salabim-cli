@@ -1,6 +1,6 @@
 # 🧙‍♂️ Salabim CLI ✨
 
-**Sim Salabim faz meu trabalhin**
+**Sim Salabim faz o trabalho pra mim**
 
 **Salabim CLI** é um helper CLI para projetos pessoais. Ele fornece alguns comandos para configurar rapidamente diversos aspectos de qualidade de código e automação para projetos React, React-Native e Node.js.
 
