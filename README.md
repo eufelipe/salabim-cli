@@ -14,6 +14,19 @@ npm install -g @salabim/salabim-cli
 
 ## 📚 Comandos Disponíveis
 
+
+### `--version` ou `-v` 📖
+
+Exibe a versão atual do Salabim CLI.
+
+#### Uso
+
+```
+salabim --version 
+```
+
+
+
 ### `setup-keystore` 🔑
 
 Configura o keystore para projetos Android. Este comando cria um keystore e atualiza o arquivo `build.gradle` com as informações necessárias.
@@ -24,15 +37,6 @@ Configura o keystore para projetos Android. Este comando cria um keystore e atua
 salabim setup-keystore
 ```
 
-### `setup-linting` 🛠️
-
-Configura o ESLint e Prettier para o projeto. Este comando instala as dependências necessárias e configura os arquivos de configuração do ESLint e Prettier.
-
-#### Uso
-
-```
-salabim setup-linting
-```
 
 ### `setup-fastlane` 🚀
 
@@ -52,6 +56,17 @@ Configura o Cspell para o projeto. Este comando instala o Cspell, cria o arquivo
 
 ```
 salabim setup-cspell
+```
+
+
+### `setup-linting` 🛠️
+
+Configura o ESLint e Prettier para o projeto. Este comando instala as dependências necessárias e configura os arquivos de configuração do ESLint e Prettier.
+
+#### Uso
+
+```
+salabim setup-linting
 ```
 
 ### `setup-code-quality` ✔️

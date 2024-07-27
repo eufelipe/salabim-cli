@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 
 const { program } = require("commander");
+const updateNotifier = require("update-notifier");
+const chalk = require('chalk');
 const packageJson = require("../package.json");
 
 const { setupKeystore } = require("../lib/setupKeystore");
@@ -8,6 +10,17 @@ const { setupLinting } = require("../lib/setupLinting");
 const { setupFastlane } = require("../lib/setupFastlane");
 const { setupCspell } = require("../lib/setupCspell");
 const { setupCodeQuality } = require("../lib/setupCodeQuality");
+
+const notifier = updateNotifier({ pkg: packageJson });
+if (notifier.update) {
+  const message =
+    `Coe mané! Tá de bobeira? Já tem uma nova atualização disponível: ${chalk.dim(
+      notifier.update.current
+    )} → ${chalk.green(notifier.update.latest)}\n` +
+    `Execute ${chalk.cyan(`npm install -g ${packageJson.name}`)} para ficar de boas!`;
+
+  notifier.notify({ message });
+}
 
 program.version(
   packageJson.version,
