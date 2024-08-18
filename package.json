@@ -1,7 +1,7 @@
 {
   "name": "@salabim/salabim-cli",
   "description": "Sim Salabim faz meu trabalhin",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "bin/index.js",
   "bin": {
     "salabim": "./bin/index.js"
