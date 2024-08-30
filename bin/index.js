@@ -8,7 +8,7 @@ const { setupLinting } = require("../lib/setupLinting");
 const { setupFastlane } = require("../lib/setupFastlane");
 const { setupCspell } = require("../lib/setupCspell");
 const { setupCodeQuality } = require("../lib/setupCodeQuality");
-const { setupTypeScript } = require("../lib/setupTypescriptAliasPath");
+const { setupAliasPath } = require("../lib/setupAliasPath");
 const { setupEnvironmentConfig } = require("../lib/setupEnvironmentConfig");
 
 async function main() {
@@ -70,10 +70,10 @@ async function main() {
     });
 
   program
-    .command("setup-typescript")
+    .command("setup-alias-path")
     .description("Setup TypeScript alias path")
     .action(() => {
-      setupTypeScript();
+      setupAliasPath();
     });
 
   program

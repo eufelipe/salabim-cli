@@ -80,14 +80,25 @@ salabim setup-code-quality
 ```
 
 
-### `setup-typescript` 📚
+### `setup-alias-path` 📚
 
 Configura o TypeScript para o projeto. Este comando instala o TypeScript e configura o alias path `@/*` e `@/tests/*`.
 
 #### Uso
 
 ```
-salabim setup-typescript
+salabim setup-alias-path
+```
+
+
+### `setup-environment-config` 📦
+
+Configura o suporte a variáveis de ambiente no projeto. Este comando cria o arquivo `.env` e sugere variáveis de ambiente.
+
+#### Uso
+
+```
+salabim setup-environment-config
 ```
 
 
