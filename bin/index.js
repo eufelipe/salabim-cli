@@ -9,6 +9,7 @@ const { setupFastlane } = require("../lib/setupFastlane");
 const { setupCspell } = require("../lib/setupCspell");
 const { setupCodeQuality } = require("../lib/setupCodeQuality");
 const { setupTypeScript } = require("../lib/setupTypescriptAliasPath");
+const { setupEnvironmentConfig } = require("../lib/setupEnvironmentConfig");
 
 async function main() {
   const { default: updateNotifier } = await import("update-notifier");
