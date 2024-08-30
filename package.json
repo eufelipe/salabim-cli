@@ -1,7 +1,7 @@
 {
   "name": "@salabim/salabim-cli",
   "description": "Sim Salabim faz meu trabalhin",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "main": "bin/index.js",
   "bin": {
     "salabim": "./bin/index.js"
@@ -17,7 +17,7 @@
     "commander": "^12.1.0",
     "prompts": "^2.4.2",
     "shelljs": "^0.8.5",
-    "update-notifier": "^7.2.0"
+    "update-notifier": "^7.3.0"
   },
   "homepage": "https://github.com/eufelipe/salabim-cli",
   "repository": {

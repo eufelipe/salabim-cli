@@ -8,6 +8,7 @@ const { setupLinting } = require("../lib/setupLinting");
 const { setupFastlane } = require("../lib/setupFastlane");
 const { setupCspell } = require("../lib/setupCspell");
 const { setupCodeQuality } = require("../lib/setupCodeQuality");
+const { setupTypeScript } = require("../lib/setupTypescriptAliasPath");
 
 async function main() {
   const { default: updateNotifier } = await import("update-notifier");
@@ -66,6 +67,14 @@ async function main() {
     .action(() => {
       setupCodeQuality();
     });
+
+  program
+    .command("setup-typescript")
+    .description("Setup TypeScript alias path")
+    .action(() => {
+      setupTypeScript();
+    });
+
 
   program.parse(process.argv);
 }
