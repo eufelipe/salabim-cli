@@ -75,6 +75,13 @@ async function main() {
       setupTypeScript();
     });
 
+  program
+    .command("setup-environment-config")
+    .description("Setup environment configuration")
+    .action(() => {
+      setupEnvironmentConfig();
+    });
+
 
   program.parse(process.argv);
 }
