@@ -79,6 +79,18 @@ Configura o lint-staged, commitlint e husky para o projeto. Este comando instala
 salabim setup-code-quality
 ```
 
+
+### `setup-typescript` 📚
+
+Configura o TypeScript para o projeto. Este comando instala o TypeScript e configura o alias path `@/*` e `@/tests/*`.
+
+#### Uso
+
+```
+salabim setup-typescript
+```
+
+
 ## 🤝 Contribuição
 
 Sinta-se à vontade para contribuir com este projeto. Envie PRs ou abra issues no GitHub.
