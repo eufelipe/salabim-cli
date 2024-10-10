@@ -1,7 +1,6 @@
 #!/usr/bin/env node --no-warnings=ExperimentalWarning
 
 const packageJson = require("../package.json");
-
 const { program } = require("commander");
 const { setupKeystore } = require("../lib/setupKeystore");
 const { setupLinting } = require("../lib/setupLinting");
@@ -11,7 +10,7 @@ const { setupCodeQuality } = require("../lib/setupCodeQuality");
 const { setupAliasPath } = require("../lib/setupAliasPath");
 const { setupEnvironmentConfig } = require("../lib/setupEnvironmentConfig");
 
-async function main() {
+async function checkForUpdates() {
   const { default: updateNotifier } = await import("update-notifier");
   const { default: chalk } = await import("chalk");
 
@@ -26,6 +25,16 @@ async function main() {
       )} para ficar de boas!`;
 
     notifier.notify({ message });
+  }
+}
+
+async function main() { 
+  
+  await checkForUpdates();
+ 
+  if (process.argv.includes('-v') || process.argv.includes('--version')) {
+    console.log(packageJson.version);
+    process.exit(0);
   }
 
   program.version(
@@ -82,7 +91,6 @@ async function main() {
     .action(() => {
       setupEnvironmentConfig();
     });
-
 
   program.parse(process.argv);
 }
