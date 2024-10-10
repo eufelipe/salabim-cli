@@ -4,5 +4,7 @@
         "podfile",
         "salabim",
         "Salabim"
-    ]
+    ],
+    "pieces.cloudCapabilities": "Blended",
+    "pieces.telemetry": true
 }
